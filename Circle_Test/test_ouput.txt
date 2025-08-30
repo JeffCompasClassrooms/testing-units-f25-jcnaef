@@ -1,0 +1,57 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.4.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/jcnaef/School/SE-3150/testing-units-f25-jcnaef/Circle_Test
+collecting ... collected 36 items
+
+test_circle.py::test_circle::test_getArea PASSED                         [  2%]
+test_circle.py::test_circle::test_getArea2 PASSED                        [  5%]
+test_circle.py::test_circle::test_getCircumference PASSED                [  8%]
+test_circle.py::test_circle::test_getRadius PASSED                       [ 11%]
+test_circle.py::test_circle::test_init PASSED                            [ 13%]
+test_circle.py::test_circle::test_neg_init FAILED                        [ 16%]
+test_circle.py::test_circle::test_setRadius PASSED                       [ 19%]
+test_circle.py::test_circle::test_setRadiusneg PASSED                    [ 22%]
+test_rock_counter.py::test_rock_counter::test_dif_color_get_rock_color_count PASSED [ 25%]
+test_rock_counter.py::test_rock_counter::test_dif_color_rocks_lost PASSED [ 27%]
+test_rock_counter.py::test_rock_counter::test_different_color_rock_found PASSED [ 30%]
+test_rock_counter.py::test_rock_counter::test_different_colored_rocks_found PASSED [ 33%]
+test_rock_counter.py::test_rock_counter::test_empty_list_rocks_found PASSED [ 36%]
+test_rock_counter.py::test_rock_counter::test_empty_list_rocks_lost PASSED [ 38%]
+test_rock_counter.py::test_rock_counter::test_get_num_color_rocks PASSED [ 41%]
+test_rock_counter.py::test_rock_counter::test_get_num_rocks PASSED       [ 44%]
+test_rock_counter.py::test_rock_counter::test_get_num_rocks_after_find PASSED [ 47%]
+test_rock_counter.py::test_rock_counter::test_get_num_rocks_after_loss PASSED [ 50%]
+test_rock_counter.py::test_rock_counter::test_get_rock_color_count_after_loss PASSED [ 52%]
+test_rock_counter.py::test_rock_counter::test_get_rock_color_count_after_loss_last_rock PASSED [ 55%]
+test_rock_counter.py::test_rock_counter::test_get_total_num_of_rock_colors PASSED [ 58%]
+test_rock_counter.py::test_rock_counter::test_has_rock_of_color PASSED   [ 61%]
+test_rock_counter.py::test_rock_counter::test_init PASSED                [ 63%]
+test_rock_counter.py::test_rock_counter::test_init_rock_color_count PASSED [ 66%]
+test_rock_counter.py::test_rock_counter::test_init_rock_count PASSED     [ 69%]
+test_rock_counter.py::test_rock_counter::test_last_color_rock_lost PASSED [ 72%]
+test_rock_counter.py::test_rock_counter::test_lost_all_color_rocks_false PASSED [ 75%]
+test_rock_counter.py::test_rock_counter::test_lost_all_color_rocks_true PASSED [ 77%]
+test_rock_counter.py::test_rock_counter::test_lost_all_rocks PASSED      [ 80%]
+test_rock_counter.py::test_rock_counter::test_mul_same_color_rocks_lost PASSED [ 83%]
+test_rock_counter.py::test_rock_counter::test_neg_rock_lost PASSED       [ 86%]
+test_rock_counter.py::test_rock_counter::test_rock_found PASSED          [ 88%]
+test_rock_counter.py::test_rock_counter::test_rock_lost PASSED           [ 91%]
+test_rock_counter.py::test_rock_counter::test_same_color_get_rock_color_count PASSED [ 94%]
+test_rock_counter.py::test_rock_counter::test_same_color_rock_found PASSED [ 97%]
+test_rock_counter.py::test_rock_counter::test_same_colored_rocks_found PASSED [100%]
+
+=================================== FAILURES ===================================
+__________________________ test_circle.test_neg_init ___________________________
+
+self = <test_circle.test_circle testMethod=test_neg_init>
+
+    def test_neg_init(self):
+        tCircle = Circle(-1)
+>       self.assertNotIsInstance(tCircle,Circle)
+E       AssertionError: <circle.Circle object at 0x7702195965f0> is an instance of <class 'circle.Circle'>
+
+test_circle.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED test_circle.py::test_circle::test_neg_init - AssertionError: <circle.C...
+========================= 1 failed, 35 passed in 0.05s =========================
