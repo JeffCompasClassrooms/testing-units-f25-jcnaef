@@ -3,8 +3,8 @@ import math
 class Circle:
 
     def __init__(self, radius):
-        self.mRadius = radius
-        return
+        if radius >=0:
+            self.mRadius = radius
 
     def getRadius(self):
         return self.mRadius
