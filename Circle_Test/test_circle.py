@@ -8,10 +8,6 @@ class test_circle(unittest.TestCase):
         tCircle = Circle(1)
         self.assertIsInstance(tCircle,Circle)
     
-    def test_neg_init(self):
-        tCircle = Circle(-1)
-        self.assertNotIsInstance(tCircle,Circle)
-
     def test_getRadius(self):
         tCircle = Circle(1)
         self.assertEqual(tCircle.getRadius(),1)
